@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, intiial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Document</title>
+        </head>
+        <body>
+            <script>
+                //write is a method of document but, not window
+                //window.document.write("hello world"); 
+                //also can be wrote as
+                document.write("hello world");
+                var myName = "Zachary";
+                document.write("<br/>" + myName);
+                
+                //for debugging
+                console.log(myName);
+                
+
+            </script>
+        
+        <p onclick="alert('You did it now! Go back where you came from!');">Click here</p>
+        <p onclick="alert(document.getElementById('Yoda').src);">What is the src?</p>
+        <img  src="yoda.jpeg" alt="Yoda" id="Yoda">
+        <p onclick="document.getElementById('Yoda').src = 'Vader.jpg'"> Change image src</p>
+        
+
+        <script src="scripts.js"></script>
+        </body>
+    </html>
